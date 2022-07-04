@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* COMMON  */
+.box {
+    height: 70px;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.avatar {
+    width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+/* END COMMON  */
+
+/* page background  */
+.page-wrapper {
+    min-width: 900px;
+    height: 100vh;
+    background: rgb(0,149,135);
+    background: linear-gradient(180deg, rgba(0,149,135,1) 20%, rgba(213,218,216,1) 20%);
+    position: relative;
+}
+/* end page background  */
+
+/* APP  */
+/* MAIN  */
+.app-wrapper {
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+/* left-col  */
+.left-col {
+    width: 40%;
+    height: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* user-box */
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-container li {
+    display: inline-block;
+}
+
+.icons-container i {
+    padding: 5px;
+    color: #b1b1b1;
+    cursor: pointer;
+}
+/* end user-box */
+
+/* notification */
+.notification {
+    background-color: #8edafb;
+    display: flex;
+    align-items: center;
+}
+
+.notification-text {
+    padding-left: 10px;
+}
+.notification-text a {
+    font-size: 13px;
+    color: #4f7687;
+}
+
+.bell i {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: white;
+    color: #8edafb;
+}
+/* end notification  */
+
+/* search-box */
+.search-box {
+    padding: 8px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+}
+
+.search-box i {
+    background-color: white;
+    padding-left: 5px;
+}
+
+.search-box input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+}
+/* end search-box  */
+
+/* contacts  */
+.contacts {
+    overflow-y: auto;
+}
+
+.contact-box {
+    padding: 10px;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    background-color: #eaeaea;
+}
+
+.active {
+    background-color: #eaeaea;
+}
+
+/* end contacts  */
+/* end left-col  */
+
+
+/* right-col  */
+.right-col {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* current contact  */
+/* end current contact  */
+
+/* chat box  */
+.chat-box {
+    height: calc(100% - 140px);
+    background-image: url(../img/mine.jpg);
+    padding: 60px;
+    overflow-y: auto;
+}
+
+.message {
+    min-width: 300px;
+    max-width: 500px;
+    margin-bottom: 60px;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    clear: both;
+}
+
+.message.sent {
+    background-color: #d5f9ba;
+    float: right;
+}
+
+.message.received {
+    background-color: white;
+    float: left;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 10px;
+    color: #a7a7a7;
+}
+
+.dropdown {
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-list {
+    text-align: center;
+}
+
+.dropdown-list li:hover {
+    background-color: #eaeaea;
+}
+
+.dropdown-list li {
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.chevron {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    padding: 10px;
+    color: #a7a7a7;
+    cursor: pointer;
+    display: none;
+}
+
+.message:hover .chevron {
+    display: block;
+}
+
+/* menu dropdown (optional) */
+.menu-dropdown li {
+    display: block;
+    text-align: left;
+}
+/* end menu dropdown (optional)  */
+
+/* end chat box  */
+
+/* user message box  */
+.user-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-message {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.user-message i {
+    font-size: 25px;
+    padding: 10px;
+}
+/* end user message box  */
+/* end right-col  */
+
+
+/* END MAIN  */
+/* end APP  */
